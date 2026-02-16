@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+# Husky v10+ compatible pre-commit hook
+# Run linter; adjust or remove if not needed
+npm run lint || exit 1
