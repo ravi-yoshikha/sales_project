@@ -30,7 +30,9 @@ export const BarChartComponent: React.FC<BarChartComponentProps> = ({
           <XAxis dataKey="month" />
           <YAxis />
           <Tooltip
-            formatter={(value) => `$${value.toLocaleString()}`}
+            formatter={(value) =>
+              value !== undefined ? `$${value.toLocaleString()}` : ""
+            }
             contentStyle={{ backgroundColor: "#f3f4f6", border: "none" }}
           />
           <Legend />
